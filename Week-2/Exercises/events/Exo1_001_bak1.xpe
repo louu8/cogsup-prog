@@ -1,0 +1,16 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Sep 17 2025 19:20:13
+#sha1: 130e39
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+3007,design,log,
+#design: #exp: Square
+#design: block_cnt,block_id,trial_cnt,trial_id
+3007,design,logged,
+3007,Experiment,started
+3008,Stimulus,presented,1
+3009,stderr,received,'Traceback (most recent call last):'
+3009,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\Assignments\\Week-2\\Exercises\\Exo1.py", line 23, in <module>\n    fixation.present(clear=True, update=False, mode=\'visible\')\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+3010,stderr,received,"TypeError: Visual.present() got an unexpected keyword argument 'mode'"
