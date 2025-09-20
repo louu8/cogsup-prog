@@ -16,7 +16,8 @@ Write a for-loop that prints out the following line 20 times:
 """
 
 print("Exercise 2.1")
-
+for i in range(20):
+    print('All work and no play makes Jack a dull boy.')
 pass
 
 print("---")
@@ -29,7 +30,9 @@ Write a for-loop that prints out the numbers from 0 up to 5 inclusive.
 """
 
 print("Exercise 2.2")
-
+for i in range(6):
+    print(i)
+    
 pass
 
 print("---")
@@ -44,6 +47,8 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 """
 
 print("Exercise 2.3")
+for i in range(0,9,2):
+    print(i)
 
 pass
 
@@ -58,7 +63,8 @@ Now write another loop to print 9 through 0 (i.e., backwards).
 """
 
 print("Exercise 2.4")
-
+for i in range(9,-1,-1):
+    print(i)
 pass
 
 print("---")
@@ -80,7 +86,8 @@ Write code that prints out the following sequence:
 """
 
 print("Exercise 2.5")
-
+for i in range(8):
+    print('z'*(i+1))
 pass
 
 print("---")
@@ -105,6 +112,11 @@ of a simple print-statement.
 """
 
 print("Exercise 2.6")
+for i in range(1,6):
+    for j in range(1,i+1):
+      print(j, end="")
+    print()
+
 
 pass
 
@@ -135,6 +147,9 @@ your code needs to carry out for a certain value of rows.
 print("Exercise 2.7")
 
 rows = 5
+for i in range(rows):
+    print(" "*(rows-i)+"o"*(i*2+1))
+
 pass
 
 print("---")
@@ -164,6 +179,12 @@ on how to align the numbers.
 """
 
 print("Exercise 2.8")
+
+
+for i in range(1,11):
+    for j in range (1,11):
+        print(f"{i*j:4}", end="")
+    print()
 
 pass
 

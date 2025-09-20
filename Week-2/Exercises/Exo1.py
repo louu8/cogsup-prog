@@ -19,14 +19,15 @@ square = stimuli.Rectangle(size=(50,50),colour=(0,0,255))
 control.start(subject_id=1)
 
 # Present the fixation cross in the square
-square.present(clear=True, update=True)
-fixation.present(clear=False, update=True)
+fixation.present(clear=True, update=False)
+square.present(clear=True, update=False)
 
-# Leave it on-screen for 500 ms
+
+# Leave it on-screen for 5000 ms
 exp.clock.wait(5000)
 
 # Remove the cross and replace it with a circle
-fixation.present(clear=True, update=True)
+square.present(clear=True, update=True)
 # Leave it on-screen until a key is pressed
 exp.keyboard.wait()
 

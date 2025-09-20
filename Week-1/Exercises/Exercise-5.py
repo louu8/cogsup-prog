@@ -25,7 +25,11 @@ def print_triangle_o(rows):
     """
     Print a centered triangle made of the letter 'o'.
     """
+    for i in range(rows):
+        print(" "*(rows-i)+"o"*(i*2+1))
+
     pass
+print_triangle_o(6)
 
 sprint("---")
 
@@ -42,9 +46,17 @@ sprint("Exercise 5.2")
 
 def prod_list_easy(lst):
     """Returns the product of the elements in a number list iteratively."""
-    pass
+    sum=1
+    lst2=[]
+    for i in lst:
+        sum = i*sum
+        lst2+=[sum]
+    print(lst2)
 
-sprint("---")
+    pass
+prod_list_easy([1,1,0,8])
+
+print("---")
 
 """
 Exercise 5.3
@@ -103,16 +115,16 @@ expected outputs. If you solved the exercises correctly, the script will tell yo
 ------
 """
 
-### Run test cases
-# if __name__ == "__main__":
-#     from testcases import (
-#         run_tests_ex51,
-#         run_tests_ex52,
-#         run_tests_ex53,
-#         run_tests_ex54,
-#     )
-
-#     run_tests_ex51()
-#     run_tests_ex52()
-#     run_tests_ex53()
-#     run_tests_ex54()
+#Run test cases
+#if __name__ == "__main__":
+#    from testcases import (
+#        run_tests_ex51,
+#       run_tests_ex52,
+#      run_tests_ex53,
+#     run_tests_ex54,
+#    )
+#
+#    run_tests_ex51()
+#    run_tests_ex52()
+#    run_tests_ex53()
+#    run_tests_ex54()
