@@ -1,0 +1,10 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Sun Sep 21 2025 11:17:29
+#sha1: 117f70
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+215,stderr,received,'Traceback (most recent call last):'
+215,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-2\\exercises\\labeled_shapes.py", line 43, in <module>\n    labelT.position=triangle.position +20\n                    ~~~~~~~~~~~~~~~~~~^~~'
+216,stderr,received,'TypeError: can only concatenate list (not "int") to list'

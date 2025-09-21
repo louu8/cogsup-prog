@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Sun Sep 21 2025 11:15:40
+#sha1: e9b5b9
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+218,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x00000240AB9B94E0>'
+219,stderr,received,'Traceback (most recent call last):'
+219,stderr,received,'  File "C:\\Users\\louma\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\expyriment\\stimuli\\_visual.py", line 266, in __del__'
+238,stderr,received,'    if self._compression_filename is not None:'
+239,stderr,received,"AttributeError: 'Line' object has no attribute '_compression_filename'"
+239,stderr,received,'Traceback (most recent call last):'
+240,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-2\\exercises\\labeled_shapes.py", line 34, in <module>\n    ligneT = stimuli.Line(start=(0,0), end=(0, -50), linewidth=3, colour=(255,255,255))'
+240,stderr,received,"TypeError: Line.__init__() got an unexpected keyword argument 'start'"
