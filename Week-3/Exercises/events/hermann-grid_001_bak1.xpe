@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Thu Sep 25 2025 17:12:30
+#sha1: ea5d45
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1377,design,log,
+#design: #exp: hermann grid
+#design: block_cnt,block_id,trial_cnt,trial_id
+1377,design,logged,
+1377,Experiment,started
+1378,Stimulus,presented,0
+1379,stderr,received,'Traceback (most recent call last):'
+1380,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-3\\exercises\\hermann-grid.py", line 47, in <module>\n    hermann_grid(10,5,10,10,(255,255,255),(0,0,0))\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1380,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-3\\exercises\\hermann-grid.py", line 35, in hermann_grid\n    if squares[i]== squares[0]:\n       ~~~~~~~^^^'
+1380,stderr,received,'TypeError: list indices must be integers or slices, not Rectangle'

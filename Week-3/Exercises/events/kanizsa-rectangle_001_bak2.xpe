@@ -1,0 +1,19 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Thu Sep 25 2025 16:47:34
+#sha1: 2548c1
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1108,design,log,
+#design: #exp: kanizsa square
+#design: block_cnt,block_id,trial_cnt,trial_id
+1108,design,logged,
+1108,Experiment,started
+1109,Stimulus,presented,2
+1110,Stimulus,presented,3
+1111,Stimulus,presented,1
+1112,Stimulus,presented,4
+1114,Stimulus,presented,0
+16863,Keyboard,received,13,wait
+16863,Experiment,ended
