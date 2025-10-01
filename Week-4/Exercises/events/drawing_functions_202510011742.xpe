@@ -1,0 +1,12 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 01 2025 17:42:02
+#sha1: fe25d5
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+257,stderr,received,'Traceback (most recent call last):'
+261,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\Week-4\\exercises\\drawing_functions.py", line 42, in <module>\n    present_for(stims, 500)\n    ~~~~~~~~~~~^^^^^^^^^^^^'
+261,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\Week-4\\exercises\\drawing_functions.py", line 16, in present_for\n    stim.plot(Canvas)\n    ~~~~~~~~~^^^^^^^^'
+261,stderr,received,'  File "C:\\Users\\louma\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\expyriment\\stimuli\\_visual.py", line 907, in plot\n    if not stimulus._set_surface(stimulus._get_surface()):\n           ^^^^^^^^^^^^^^^^^^^^^'
+261,stderr,received,"AttributeError: type object 'Canvas' has no attribute '_set_surface'"
