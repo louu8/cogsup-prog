@@ -2,17 +2,21 @@ from tkinter import Canvas
 from expyriment import design, control, stimuli
 from expyriment.misc.constants import K_SPACE
 
-#doesn't work
+#collaboration with Yves Apprioux
 
 exp = design.Experiment(name="ternus")
 
+control.set_develop_mode()
+control.initialize(exp)
+
 def add_tags(circle,radius):
-    pos=(radius//2, -radius//2)
-    tag = stimuli.Circle(int(radius/4), colour=(255,0,0))
-    tag.plot(circle,pos)
+    pos=(0,0)
+    #pos=(radius//2, -radius//2)
+    tag = stimuli.Circle(int(radius/3), colour=(255,0,0),position=pos)
+    tag.plot(circle)
 
 def make_circles(radius,tags):
-    dist = radius * 3
+    dist = radius * 3 
     circles = []
     for i in range(2):
         circle = stimuli.Circle(radius, colour=(255,255,255), position=((i - 1) * dist, 0))
@@ -22,9 +26,9 @@ def make_circles(radius,tags):
         circles.append(circle)
     return circles
 
-def present_for(stims,frame):
+def present_for(stims,time):
     stims.present()
-    exp.clock.wait(int(round(frame * 1000 / 60.0)))
+    exp.clock.wait(time)
     exp.screen.clear()
 
 def run_trial(radius, isi, tags):
@@ -45,21 +49,22 @@ def run_trial(radius, isi, tags):
 
     # Loop until SPACE is pressed
     while True:
-        present_for(canv1, 100)   # 100 ms approx
         if isi > 0:
-            exp.clock.wait(int(round(isi * 1000 / 60.0)))
-        present_for(canv2, 100)
+            exp.screen.update()
+            exp.clock.wait(int(isi * 1000/60))
+        present_for(canv1, 200)   # 200 ms approx
+        if isi > 0:
+            exp.screen.update()
+            exp.clock.wait(int(isi * 1000/60))
+        present_for(canv2, 200)
+        
         if exp.keyboard.check(K_SPACE):
             break
 
 
 """ Test functions """
 
-control.set_develop_mode()
-control.initialize(exp)
+run_trial(50, 0, False)
 
-
-
-run_trial(50, 6, True)
 
 control.end()
