@@ -9,20 +9,17 @@ def load(stims):
         stim.preload()
 
 def timed_draw(stims):
-    Canvas.clear.surface()
-    Canvas.preload
-    t0=exp.colck.time
-    draw(stims)
-    dt = exp.clok.time-t0
-    return dt
+    t0=exp.clock.time
+    for i, stim in enumerate(stims):
+        stim.present(clear=(i==0),update=(len(stims)-1==i))
+    t1=exp.clock.time
+    return t1-t0
     # return the time it took to draw
 
 def present_for(stims,t=1000):
-    Canvas.clear_surface()
-    Canvas.preload
-    draw(stims)
-    Canvas.present()
-    exp.clock.wait(t-timed_draw(stims))
+    t0=timed_draw(stims)
+    exp.clock.wait(t-t0)
+    exp.screen.clear()
 
 
 """ Test functions """
