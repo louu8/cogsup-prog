@@ -1,0 +1,13 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 08 2025 17:13:27
+#sha1: 2b297f
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+295,stderr,received,'Traceback (most recent call last):'
+296,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\ternus.py", line 4, in <module>\n    from drawing_functions import *'
+296,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\drawing_functions.py", line 46, in <module>\n    present_for(stims, 500)\n    ~~~~~~~~~~~^^^^^^^^^^^^'
+296,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\drawing_functions.py", line 20, in present_for\n    t0=timed_draw(exp,stims)'
+296,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\drawing_functions.py", line 12, in timed_draw\n    t0=exp.clock.time\n       ^^^^^^^^^'
+296,stderr,received,"AttributeError: 'list' object has no attribute 'clock'"

@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 08 2025 17:56:27
+#sha1: 071c31
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+5042,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+5043,design,logged,
+5043,Experiment,started
+5043,stderr,received,'Traceback (most recent call last):'
+5044,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-5\\Exercises\\blindspot.py", line 43, in <module>\n    run_trial()\n    ~~~~~~~~~^^'
+5044,stderr,received,"TypeError: run_trial() missing 1 required positional argument: 'side'"

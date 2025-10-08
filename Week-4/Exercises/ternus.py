@@ -1,8 +1,9 @@
 from tkinter import Canvas
 from expyriment import design, control, stimuli
 from expyriment.misc.constants import K_SPACE
+from drawing_functions import *
 
-#collaboration with Yves Apprioux
+#collaboration with Yves Appriou
 
 exp = design.Experiment(name="ternus")
 
@@ -26,11 +27,6 @@ def make_circles(radius,tags):
         circles.append(circle)
     return circles
 
-def present_for(stims,time):
-    stims.present()
-    exp.clock.wait(time)
-    exp.screen.clear()
-
 def run_trial(radius, isi, tags):
     # First frame: left 3 circles
     circle1 = make_circles(radius, tags)
@@ -52,11 +48,11 @@ def run_trial(radius, isi, tags):
         if isi > 0:
             exp.screen.update()
             exp.clock.wait(int(isi * 1000/60))
-        present_for(canv1, 200)   # 200 ms approx
+        present_for(exp,canv1, 200)   # 200 ms approx
         if isi > 0:
             exp.screen.update()
             exp.clock.wait(int(isi * 1000/60))
-        present_for(canv2, 200)
+        present_for(exp,canv2, 200)
         
         if exp.keyboard.check(K_SPACE):
             break
@@ -64,7 +60,7 @@ def run_trial(radius, isi, tags):
 
 """ Test functions """
 
-run_trial(50, 0, False)
+run_trial(50, 0, True)
 
 
 control.end()

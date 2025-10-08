@@ -1,0 +1,13 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: cp1252
+#date: Wed Oct 08 2025 17:19:51
+#sha1: 2b297f
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+327,stderr,received,'Traceback (most recent call last):'
+328,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\ternus.py", line 63, in <module>\n    run_trial(50, 0, True)\n    ~~~~~~~~~^^^^^^^^^^^^^'
+328,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\ternus.py", line 51, in run_trial\n    present_for(exp,canv1, 200)   # 200 ms approx\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^'
+329,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\drawing_functions.py", line 21, in present_for\n    t0=timed_draw(exp,stims)'
+329,stderr,received,'  File "c:\\Users\\louma\\Documents\\cogsup\\prog\\Assignments\\Week-4\\Exercises\\drawing_functions.py", line 13, in timed_draw\n    for stim in stims:\n                ^^^^^'
+329,stderr,received,"TypeError: 'BlankScreen' object is not iterable"
