@@ -1,0 +1,24 @@
+#Expyriment 1.0.0 (Python 3.13.8), .xpd-file, coding: cp1252
+#date: Fri Oct 10 2025 15:05:48
+#--EXPERIMENT INFO
+#e mainfile: blindspot.py
+#e sha1: ada2aa
+#e modules: 
+#e Experiment: Blindspot
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 1
+subject_id,
+1,L,1073741904,75,-5,0
+1,L,1073741904,75,-10,0
+1,L,1073741904,75,-15,0
+1,L,1073741904,75,-20,0
+1,L,1073741904,75,-25,0
+1,L,1073741906,75,-25,5
+1,L,1073741904,75,-30,5
+1,L,1073741904,75,-35,5
+1,L,1073741904,75,-40,5
+1,L,1073741904,75,-45,5
+1,L,1073741904,75,-50,5
+1,L,1073741906,75,-50,10
+1,L,32,75,-50,10

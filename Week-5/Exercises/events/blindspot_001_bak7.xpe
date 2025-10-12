@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.8), .xpe-file, coding: cp1252
+#date: Fri Oct 10 2025 14:55:56
+#sha1: 860d3e
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1320,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+1320,design,logged,
+1320,Experiment,started
+1330,Stimulus,presented,0
+1331,stderr,received,'Traceback (most recent call last):'
+1332,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-5\\exercises\\blindspot.py", line 72, in <module>\n    run_trial("L")\n    ~~~~~~~~~^^^^^'
+1332,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-5\\exercises\\blindspot.py", line 36, in run_trial\n    exp.keyboard.wait(keys=[K_space])\n                            ^^^^^^^'
+1332,stderr,received,"NameError: name 'K_space' is not defined. Did you mean: 'K_SPACE'?"
