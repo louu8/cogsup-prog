@@ -1,0 +1,18 @@
+#Expyriment 1.0.0 (Python 3.13.8), .xpe-file, coding: cp1252
+#date: Wed Oct 15 2025 16:46:36
+#sha1: a19823
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+1980,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1980,design,logged,
+1980,Experiment,started
+1995,Stimulus,presented,19
+7273,Keyboard,received,32,wait
+7274,stderr,received,'Traceback (most recent call last):'
+7279,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-6\\exercises\\stroop.py", line 79, in <module>\n    for block_id in range(1, N_BLOCKS + 1):\n                             ~~~~~~~~~^~~'
+7279,stderr,received,'TypeError: can only concatenate list (not "int") to list'
