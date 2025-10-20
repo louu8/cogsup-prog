@@ -1,0 +1,18 @@
+#Expyriment 1.0.0 (Python 3.13.9), .xpe-file, coding: cp1252
+#date: Sun Oct 19 2025 18:08:16
+#sha1: a18d25
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+2515,design,log,
+#design: #exp: Stroop_balanced
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+2515,design,logged,
+2515,Experiment,started
+2524,Stimulus,presented,19
+9940,Keyboard,received,32,wait
+9941,stderr,received,'Traceback (most recent call last):'
+9941,stderr,received,'  File "C:\\Users\\louma\\documents\\cogsup\\prog\\assignments\\week-6\\exercises\\stroop_balanced.py", line 89, in <module>\n    run_trial(block_id, trial_id,word,color)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+9941,stderr,received,"TypeError: run_trial() missing 1 required positional argument: 'color'"
