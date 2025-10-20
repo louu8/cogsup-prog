@@ -1,15 +1,17 @@
 import itertools
 import random
 from expyriment import design, control, stimuli
-from expyriment.misc.constants import C_WHITE, C_BLACK, K_r, K_b, K_o, K_g
+from expyriment.misc.constants import C_WHITE, C_BLACK, C_BLUE, C_GREEN, C_RED, C_EXPYRIMENT_ORANGE, K_r, K_b, K_o, K_g
 
-#doesn't work yet
+# work with Yves Appriou
+#have to write input in the terminal to launch the experyment
 
 """ Constants """
 KEYS_MAP ={'red':K_r, 'blue':K_b, 'green':K_g, 'orange':K_o}
 TRIAL_TYPES = ['match','mismatch']
 COLORS = ['red','blue','green','orange']
 KEYS=list(KEYS_MAP.values())
+COLOR_MAP={'red':C_RED, 'blue':C_BLUE, 'green':C_GREEN, 'orange':C_EXPYRIMENT_ORANGE}
 
 N_BLOCKS = 8
 N_TRIAL_TOTAL = 128
@@ -24,7 +26,7 @@ INSTR_MID = """You have finished half of the experiment, well done! Your task wi
 INSTR_END = """Well done!\nPress SPACE to quit the experiment."""
 
 FEEDBACK_CORRECT = """well done! """
-FEEDBACK_INCORRECT = """, try again! """
+FEEDBACK_INCORRECT = """try again! """
 
 """ Helper functions """
 def load(stims):
