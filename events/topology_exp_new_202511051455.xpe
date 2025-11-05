@@ -1,0 +1,12 @@
+#Expyriment 1.0.0 (Python 3.13.9), .xpe-file, coding: cp1252
+#date: Wed Nov 05 2025 14:55:56
+#sha1: 3755d4
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Windows', node='LAPTOP-H2ALO7G7', release='11', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+6343,stderr,received,'Traceback (most recent call last):'
+6344,stderr,received,'  File "c:\\Users\\louma\\Downloads\\topology_exp_new.py", line 56, in <module>\n    stimuli_dict = load_stimuli()'
+6345,stderr,received,'  File "c:\\Users\\louma\\Downloads\\topology_exp_new.py", line 26, in load_stimuli\n    items[i][t] = stimuli.Picture(path)\n                  ~~~~~~~~~~~~~~~^^^^^^'
+6346,stderr,received,'  File "C:\\Users\\louma\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\expyriment\\stimuli\\_picture.py", line 41, in __init__\n    raise OSError("The picture file \'{0}\' does not exist".format(\n        filename))'
+6346,stderr,received,"OSError: The picture file 'SameDiff\\1-def.png' does not exist"
