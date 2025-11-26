@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="https://unpkg.com/jspsych@8.0.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+    <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+
+  <script type="text/javascript">
+    const NUMBER_OF_TRIALS_PER_KEY = 10;
+    const KEYS = ['F', 'J'];
+    const BLANK_DURATION = 50; // ms
+    const FIXATION_DURATION = 500;
+    const COLORS = ['red', 'yellow', 'green','blue'];
+
+    function createShuffledListOfTrials(keys, colors, trialsPerColor){
+      let possibleTrials = [];
+
+      for (let word of colors){
+        for (let color of colors){
+          possibleTrials.push({
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: `<p style="color:${color}">${word}</p>`,
+            choices: keys
+          });
+        }
+      }
+
+      return jsPsych.randomization.repeat(possibleTrials, trialsPerColor);
+    }
+  </script>
+
+  <script type="text/javascript">
+    const jsPsych = initJsPsych({
+      on_finish: function(){
+        jsPsych.data.get().localSave("csv", "stroop_results.csv");
+        document.body.innerHTML = "Thank you!";
+      }
+    });
+
+    const helloTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>Hello!</p>
+        <p>In this task, you have to indicate whether the meaning of a word and the color of its font match.</p>
+        <p> Press J if they do, F if they don't.</p>
+        <p>Press any key to continue.</p>
+        `
+    };
+
+    // Create a new type trial with a blank screen
+    // IMPORTANT:
+    const blankTrial = {
+      type:jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      trial_duration: BLANK_DURATION,
+      choices: [],
+    };
+
+    const fixationTrial = {
+      type:jsPsychHtmlKeyboardResponse,
+      stimulus: "<p style='text-align:center'>+</p>",
+      trial_duration: FIXATION_DURATION,
+      choices: [],
+    };
+
+    let trials = createShuffledListOfTrials(KEYS,COLORS, NUMBER_OF_TRIALS_PER_KEY);
+
+    let timeline = [helloTrial];
+
+    for (let trial of trials){
+      timeline.push(fixationTrial);
+
+      timeline.push(trial);
+
+      // Add a blank trial after each stimulus display
+      timeline.push(blankTrial);
+    }
+
+    jsPsych.run(timeline);
+  </script>
+</html>
